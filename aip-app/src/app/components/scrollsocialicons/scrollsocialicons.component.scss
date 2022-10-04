@@ -1,0 +1,21 @@
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/typo';
+
+.scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  left: 50px;
+  top: 180px;
+  .social {
+    margin-top: 20px;
+    font-size: 30px;
+    color: $color-white;
+    &:hover {
+      cursor: pointer;
+      color: $color-primary;
+      scale: 1.1;
+    }
+  }
+}

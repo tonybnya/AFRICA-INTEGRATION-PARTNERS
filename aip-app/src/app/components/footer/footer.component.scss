@@ -1,0 +1,59 @@
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/typo';
+
+footer {
+  color: $color-white;
+  font-family: 'Varela';
+  .content {
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    .branding {
+      text-align: center;
+      .social {
+        font-size: 30px;
+        color: $color-secondary;
+        margin: 10px;
+      }
+      .logo {
+        width: 50%;
+      }
+    }
+    .sitemap {
+      padding-top: 30px;
+      .links {
+        li {
+          padding: 5px;
+          a {
+            text-transform: uppercase;
+            color: $color-white;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+    .infos {
+      padding-top: 30px;
+      span {
+        padding: 5px;
+      }
+      .contact {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  .copyright {
+    background: $color-dark;
+    padding: 1rem 1rem;
+    p {
+      color: $color-white;
+      text-align: center;
+      text-transform: capitalize;
+      margin-bottom: 0;
+    }
+  }
+}

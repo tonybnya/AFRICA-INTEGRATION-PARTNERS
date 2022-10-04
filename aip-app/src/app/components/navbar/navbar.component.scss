@@ -1,0 +1,65 @@
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/typo';
+
+.nav {
+  // background: transparent !important;
+  padding: 1rem 1.5rem;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .nav-toggle {
+      font-size: 1.5rem;
+      color: $color-white;
+      background: transparent;
+      border-color: transparent;
+      display: none;
+      cursor: pointer;
+      &:hover {
+        scale: 1.1;
+        color: $color-primary;
+      }
+    }
+  }
+  .links-container {
+    height: auto !important;
+    overflow: hidden;
+    .links {
+      display: flex;
+      align-items: center;
+      li {
+        &:hover {
+          scale: 1.1;
+        }
+        a {
+          text-transform: uppercase;
+          font-family: 'VarelaRound';
+          font-size: 16px;
+          color: $color-white;
+          margin: 0 .7rem;
+        }
+      }
+      .btn {
+        // width: 50px;
+        // background: $color-primary;
+        margin-left: 1.5rem;
+      }
+    }
+  }
+}
+
+.active {
+  font-weight: bolder;
+  text-decoration: underline;
+  color: $color-primary !important;
+  scale: 1.1;
+}
+
+.show-links {
+  height: 200px;
+}

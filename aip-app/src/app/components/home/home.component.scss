@@ -1,0 +1,34 @@
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/typo';
+
+#hero {
+  min-height: 100vh;
+  background: linear-gradient(rgba(63, 208, 212, 0.4), rgba(0, 0, 0, 0.9)), url(https://i.postimg.cc/xdwZ5k5z/pexels-christina-morillo-1181422.jpg) center/cover no-repeat;
+  .banner {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 120px;
+    h1 {
+      text-transform: uppercase;
+      color: $color-white;
+      font-family: 'VarelaRound';
+      font-size: 3rem;
+      font-weight: bolder;
+    }
+    p {
+      margin: 20px auto;
+      width: 50rem;
+      font-family: 'Inter';
+      color: $color-white;
+    }
+    .btns {
+      display: flex;
+      flex-direction: column;
+      .btn {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

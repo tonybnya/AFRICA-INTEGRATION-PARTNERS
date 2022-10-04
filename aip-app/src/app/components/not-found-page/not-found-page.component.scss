@@ -1,0 +1,20 @@
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/typo';
+
+.container {
+  width: 80%;
+  margin: 100px auto;
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .text {
+      h1 {
+        text-transform: capitalize;
+        padding-bottom: 20px;
+        color: $color-white;
+        font-family: 'Varela';
+      }
+    }
+  }
+}

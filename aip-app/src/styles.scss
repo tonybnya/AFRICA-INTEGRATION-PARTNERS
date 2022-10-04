@@ -1,0 +1,29 @@
+@import './assets/styles/colors';
+@import './assets/styles/typo';
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Varela';
+  color: $color-white;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}

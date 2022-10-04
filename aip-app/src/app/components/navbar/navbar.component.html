@@ -1,0 +1,48 @@
+<div class="nav">
+  <!-- nav header -->
+  <div class="nav-header">
+    <a class="branding" routerLink="">
+      <img
+        width="25%"
+        src="../../../assets/img/logo4-nobg.png"
+        class="logo"
+        alt="logo"
+      />
+    </a>
+    <button class="nav-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+  <!-- links -->
+  <div class="links-container">
+    <ul class="links">
+      <li>
+        <a
+          class="link"
+          routerLink=""
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >home</a
+        >
+      </li>
+      <li>
+        <a class="link" routerLink="cabinet" routerLinkActive="active"
+          >cabinet</a
+        >
+      </li>
+      <li>
+        <a class="link" routerLink="solutions" routerLinkActive="active"
+          >solutions</a
+        >
+      </li>
+      <li>
+        <a class="link" routerLink="archives" routerLinkActive="active"
+          >archives</a
+        >
+      </li>
+      <li>
+        <app-button class="btn" text="s'inscrire"></app-button>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -2,7 +2,6 @@
 @import '../../../assets/styles/typo';
 
 .nav {
-  // background: transparent !important;
   padding: 1rem 1.5rem;
   width: 80%;
   margin: 0 auto;
@@ -37,6 +36,7 @@
           scale: 1.1;
         }
         a {
+          text-decoration: none;
           text-transform: uppercase;
           font-family: 'VarelaRound';
           font-size: 16px;
@@ -45,8 +45,6 @@
         }
       }
       .btn {
-        // width: 50px;
-        // background: $color-primary;
         margin-left: 1.5rem;
       }
     }

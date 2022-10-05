@@ -12,9 +12,16 @@ footer {
     .branding {
       text-align: center;
       .social {
-        font-size: 30px;
-        color: $color-secondary;
-        margin: 10px;
+        .icon {
+          font-size: 30px;
+          color: $color-secondary;
+          margin: 10px;
+          &:hover {
+            cursor: pointer;
+            color: $color-white;
+            scale: 1.1;
+          }
+        }
       }
       .logo {
         width: 50%;
@@ -25,11 +32,16 @@ footer {
       .links {
         li {
           padding: 5px;
+          &:hover {
+            scale: 1.1;
+          }
           a {
             text-transform: uppercase;
             color: $color-white;
+            text-decoration: none;
             &:hover {
               text-decoration: underline;
+              color: $color-primary;
             }
           }
         }

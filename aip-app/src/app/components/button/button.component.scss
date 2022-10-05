@@ -5,12 +5,12 @@
   text-transform: uppercase;
   font-family: 'VarelaRound';
   font-weight: bolder;
-  background: $color-primary;
+  background: transparent;
   color: $color-white;
   padding: 0.5rem 0.75rem;
-  font-size: 0.875rem;
+  font-size: .8rem;
   border-radius: 5px;
-  border: 2px solid $color-white;
+  border: 2px solid $color-primary;
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   &:hover {

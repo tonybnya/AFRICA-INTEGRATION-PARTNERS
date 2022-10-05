@@ -2,9 +2,21 @@
 @import '../../../assets/styles/typo';
 
 #hero {
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(-1000px) scale(0.1);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
   min-height: 100vh;
   background: linear-gradient(rgba(63, 208, 212, 0.4), rgba(0, 0, 0, 0.9)), url(https://i.postimg.cc/xdwZ5k5z/pexels-christina-morillo-1181422.jpg) center/cover no-repeat;
   .banner {
+    animation: fadeInRight 1500ms ease-in-out;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -27,7 +39,57 @@
       display: flex;
       flex-direction: column;
       .btn {
-        margin-bottom: 10px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+#services {
+  color: $color-white;
+  font-family: 'InterTight';
+  margin-bottom: 200px;
+  .container {
+    width: 80%;
+    margin: 50px auto;
+    h1 {
+      font-family: 'Varela';
+      font-weight: bolder;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+    .content {
+      width: 80%;
+      margin: 0 auto;
+      .item {
+        display: flex;
+        margin-bottom: 50px;
+        .item-img {
+          object-fit: cover;
+          height: 200px;
+          border: 5px solid $color-white;
+          border-radius: 5px;
+          &:hover {
+            scale: 1.05;
+            border: 3px solid $color-primary;
+            cursor: pointer;
+          }
+        }
+        .item-info {
+          width: 50%;
+          padding-left: 20px;
+          h3 {
+            border-bottom: .5px solid $color-white;
+            margin-bottom: 10px;
+            text-transform: capitalize;
+            font-family: 'VarelaRound';
+          }
+          .item-text {
+            margin-bottom: 0;
+            padding-top: 1rem;
+          }
+        }
       }
     }
   }

@@ -1,7 +1,7 @@
 @import '../../../assets/styles/colors';
 @import '../../../assets/styles/typo';
 
-%btn {
+button {
   text-transform: uppercase;
   font-family: 'VarelaRound';
   font-weight: bolder;
@@ -17,10 +17,5 @@
     color: $color-primary;
     background: $color-white;
     border: 2px solid $color-primary;
-    scale: 1.1;
   }
-}
-
-button {
-  @extend %btn;
 }

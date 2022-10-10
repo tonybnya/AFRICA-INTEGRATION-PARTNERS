@@ -52,8 +52,8 @@ a {
 }
 
 #description {
-  margin-bottom: 150px;
-  margin-top: 150px;
+  margin-bottom: 100px;
+  margin-top: 100px;
   .content {
     display: flex;
     justify-content: space-between;
@@ -74,8 +74,8 @@ a {
 }
 
 #services {
-  margin-bottom: 150px;
-  margin-top: 150px;
+  margin-bottom: 100px;
+  margin-top: 100px;
   color: $color-white;
   font-family: 'InterTight';
   margin-bottom: 200px;
@@ -87,7 +87,7 @@ a {
     text-align: center;
   }
   .content {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     .content-row {
       display: flex;
@@ -99,7 +99,7 @@ a {
       margin-bottom: 50px;
       .item-img {
         object-fit: cover;
-        height: 150px;
+        height: 200px;
         border: 5px solid $color-white;
         border-radius: 5px;
         &:hover {
@@ -112,10 +112,11 @@ a {
         padding-left: 20px;
         text-align: justify;
         h3 {
-          border-bottom: .5px solid $color-white;
+          border-bottom: 3px solid $color-white;
           margin-bottom: 10px;
           font-family: 'VarelaRound';
-          font-size: 18px;
+          font-size: 14px;
+          text-transform: uppercase;
         }
         .btn {
           margin-bottom: 0;
@@ -123,5 +124,28 @@ a {
         }
       }
     }
+  }
+}
+
+#choice {
+  .container {
+    h1 {
+      text-align: center;
+    }
+    .text {
+      padding: 1rem;
+      p {
+        text-align: justify;
+      }
+    }
+    ::ng-deep .mat-tab-list .mat-tab-labels .mat-tab-label-active {
+      color:$color-primary;
+      background-color: $color-white;
+      }
+      
+      ::ng-deep .mat-tab-list .mat-tab-labels {
+      color: $color-white;
+      background-color: $color-primary;
+      }
   }
 }

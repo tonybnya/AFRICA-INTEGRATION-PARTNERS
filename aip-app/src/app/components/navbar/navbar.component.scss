@@ -8,6 +8,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  .logo {
+    max-width: 15%;
+  }
   .nav-header {
     display: flex;
     align-items: center;

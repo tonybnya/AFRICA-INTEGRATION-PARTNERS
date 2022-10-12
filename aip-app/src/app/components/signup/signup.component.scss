@@ -1,0 +1,50 @@
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/typo';
+
+.container {
+  background-color: $color-blue;
+  padding: 20px 40px;
+  border-radius: 5px;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Varela';
+  text-align: center;
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: $color-white;
+  }
+  p {
+    color: $color-white;
+    text-align: center;
+    margin-top: 30px;
+  }
+  a {
+    text-decoration: none;
+    color: #102a42;
+  }
+  .form-control {
+    position: relative;
+    margin: 5px 40px;
+    width: 300px;
+    input {
+      background-color: transparent;
+      border: 0;
+      border-bottom: 2px $color-white solid;
+      display: block;
+      width: 100%;
+      color: $color-dark;
+      font-size: 18px;
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+}

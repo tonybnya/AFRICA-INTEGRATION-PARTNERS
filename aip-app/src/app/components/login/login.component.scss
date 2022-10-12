@@ -15,6 +15,7 @@
   height: 50vh;
   overflow: hidden;
   font-family: 'Varela';
+  text-align: center;
   h1 {
     text-align: center;
     margin-bottom: 30px;
@@ -23,6 +24,7 @@
   p {
     color: $color-white;
     text-align: center;
+    margin-top: 30px;
   }
   a {
     text-decoration: none;
@@ -44,8 +46,5 @@
         outline: 0;
       }
     }
-  }
-  .btn {
-    width: 100%;
   }
 }

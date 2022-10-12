@@ -6,50 +6,69 @@
   >
     <h1>Contactez-nous !</h1>
     <div class="relative mb-4">
-      <label for="name" class="leading-7 text-sm text-gray-600"
-        >Noms et prénoms</label
-      >
-      <input formControlName="name" type="text" id="name" name="name" />
+      <div class="form-control">
+        <input
+          formControlName="name"
+          placeholder="Noms & Prénoms"
+          type="text"
+          id="name"
+          name="name"
+        />
+      </div>
     </div>
     <div class="relative mb-4">
-      <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
-      <input formControlName="email" type="email" id="email" name="email" />
+      <div class="form-control">
+        <input
+          formControlName="email"
+          placeholder="Email"
+          type="email"
+          id="email"
+          name="email"
+        />
+      </div>
     </div>
     <div class="relative mb-4">
-      <label for="email" class="leading-7 text-sm text-gray-600"
-        >Téléphone</label
-      >
-      <input formControlName="phone" type="text" id="phone" name="phone" />
+      <div class="form-control">
+        <input
+          formControlName="phone"
+          placeholder="Téléphone"
+          type="text"
+          id="phone"
+          name="phone"
+        />
+      </div>
     </div>
     <div class="relative mb-4">
-      <label for="email" class="leading-7 text-sm text-gray-600"
-        >Entreprise</label
-      >
-      <input
-        formControlName="society"
-        type="text"
-        id="society"
-        name="society"
-      />
+      <div class="form-control">
+        <input
+          formControlName="society"
+          type="text"
+          id="society"
+          name="society"
+          placeholder="Entreprise"
+        />
+      </div>
     </div>
     <div class="relative mb-4">
-      <label for="email" class="leading-7 text-sm text-gray-600">Poste</label>
-      <input
-        formControlName="position"
-        type="text"
-        id="position"
-        name="position"
-      />
+      <div class="form-control">
+        <input
+          formControlName="position"
+          type="text"
+          id="position"
+          name="position"
+          placeholder="Poste"
+        />
+      </div>
     </div>
     <div class="relative mb-4">
-      <label for="message" class="leading-7 text-sm text-gray-600"
-        >Message</label
-      >
-      <textarea
-        formControlName="message"
-        id="message"
-        name="message"
-      ></textarea>
+      <div class="form-control">
+        <textarea
+          formControlName="message"
+          id="message"
+          name="message"
+          placeholder="Message"
+        ></textarea>
+      </div>
     </div>
     <app-button text="ENVOYER" type="submit" class="btn"></app-button>
   </form>

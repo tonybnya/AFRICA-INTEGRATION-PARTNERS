@@ -16,6 +16,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    .form-control {
+      margin: 2px 40px;
+      width: 500px;
+    }
   }
   h1,
   label {
@@ -23,9 +27,19 @@
   }
   input,
   textarea {
+    border-radius: 5px;
     &:focus {
       outline: 0;
     }
+  }
+  input {
+    border: 2px $color-white solid;
+    display: block;
+  }
+  textarea {
+    width: 480px;
+    height: 200px;
+    border: none;
   }
   .btn {
     text-align: center;

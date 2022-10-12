@@ -25,6 +25,14 @@ span {
       }
     }
   }
+  ::ng-deep .mat-tab-list .mat-tab-labels .mat-tab-label-active {
+    color:$color-primary;
+    background-color: $color-white;
+  }
+  ::ng-deep .mat-tab-list .mat-tab-labels {
+    color: $color-white;
+    background-color: $color-primary;
+  }
   .ceo {
     margin: 30px auto;
     display: flex;
@@ -34,7 +42,7 @@ span {
       border: 5px solid $color-white;
       border-radius: 5px;
       &:hover {
-        scale: 1.05;
+        scale: 1.005;
         border: 3px solid $color-primary;
       }
     }

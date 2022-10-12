@@ -1,22 +1,23 @@
 <header id="hero">
-  <div class="container">
+  <div class="container hero">
     <!-- banner -->
     <div class="banner">
-      <h1>africa integration partners</h1>
-      <p>
+      <p class="title">Le Conseil, Notre Expertise.</p>
+      <p class="text">
         Vous avez une idée ? Un projet ? Vous avez déjà vos premiers clients
         ?<br />Faites-vous accompagner par nos experts et garantissez votre
         réussite !<br /><a routerLink="cabinet">AFRICA INTEGRATION PARTNERS</a>,
         le partenaire de votre croissance !
       </p>
       <div class="btns">
-        <app-button
-          (click)="downloadFile()"
-          text="voir la plaquette"
-          class="btn"
-        ></app-button>
-        <app-button text="nous contacter" class="btn"></app-button>
+        <a class="file" href="../../../assets/aip.pdf" target="_blank"
+          >LA PLAQUETTE</a
+        >
+        <app-button text="nous contacter" routerLink="contact"></app-button>
       </div>
+    </div>
+    <div class="hero-img">
+      <img class="fred" src="../../../assets/img/fred.jpg" alt="" />
     </div>
   </div>
 </header>
@@ -74,7 +75,7 @@
           <li>Structurer leurs compétences de gestion ;</li>
           <li>Et les accompagnons à décrocher leur premier emploi.</li>
         </ol>
-        <app-button class="btn" text="En Savoir Plus..."></app-button>
+        <app-button routerLink="cabinet" text="En Savoir Plus..."></app-button>
       </div>
     </div>
   </div>
@@ -94,7 +95,6 @@
           <div class="item-info">
             <h3>Conseil</h3>
             <app-button
-              class="btn"
               routerLink="solutions"
               text="En Savoir Plus..."
             ></app-button>
@@ -109,7 +109,6 @@
           <div class="item-info">
             <h3>Etudes</h3>
             <app-button
-              class="btn"
               routerLink="solutions"
               text="En Savoir Plus..."
             ></app-button>
@@ -126,7 +125,6 @@
           <div class="item-info">
             <h3>Orientation</h3>
             <app-button
-              class="btn"
               routerLink="solutions"
               text="En Savoir Plus..."
             ></app-button>
@@ -141,7 +139,6 @@
           <div class="item-info">
             <h3>Formation</h3>
             <app-button
-              class="btn"
               routerLink="solutions"
               text="En Savoir Plus..."
             ></app-button>
@@ -158,7 +155,6 @@
           <div class="item-info">
             <h3>Levée de fonds</h3>
             <app-button
-              class="btn"
               routerLink="solutions"
               text="En Savoir Plus..."
             ></app-button>
@@ -173,7 +169,6 @@
           <div class="item-info">
             <h3>Bilan de compétences</h3>
             <app-button
-              class="btn"
               routerLink="solutions"
               text="En Savoir Plus..."
             ></app-button>

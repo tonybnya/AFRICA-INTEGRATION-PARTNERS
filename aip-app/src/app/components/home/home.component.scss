@@ -8,6 +8,20 @@
   font-family: 'Varela';
 }
 
+.hero {
+  display: flex;
+  .fred {
+    width: 100%;
+    margin-top: 120px;
+    border: 5px solid $color-white;
+    border-radius: 5px;
+    &:hover {
+      scale: 1.05;
+      border: 3px solid $color-primary;
+    }
+  }
+}
+
 a {
   text-decoration: none;
   font-weight: bolder;
@@ -28,13 +42,37 @@ a {
 
   min-height: 100vh;
   background: linear-gradient(rgba(63, 208, 212, 0.4), rgba(0, 0, 0, 0.9)), url(https://i.postimg.cc/xdwZ5k5z/pexels-christina-morillo-1181422.jpg) center/cover no-repeat;
+  // background: url(https://i.postimg.cc/xdwZ5k5z/pexels-christina-morillo-1181422.jpg) center/cover no-repeat;
   .banner {
     animation: fadeInRight 1500ms ease-in-out;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: justify;
     padding-top: 120px;
+    .file {
+      width: 140px;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: 'VarelaRound';
+      font-weight: bolder;
+      background: transparent;
+      color: $color-white;
+      padding: 0.5rem 0.5rem;
+      font-size: .8rem;
+      border-radius: 5px;
+      border: 2px solid $color-primary;
+      cursor: pointer;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+      &:hover {
+        color: $color-primary;
+        background: $color-white;
+        border: 2px solid $color-primary;
+      }
+    }
+    app-button {
+      margin-top: 15px;
+    }
     h1 {
       text-transform: uppercase;
       color: $color-white;
@@ -45,8 +83,18 @@ a {
     p {
       margin: 20px auto;
       width: 50rem;
-      font-family: 'Inter';
+      font-family: 'Varela';
+      line-height: 30px;
+      font-size: 20px;
       color: $color-white;
+    }
+    .title {
+      font-family: 'VarelaRound';
+      font-size: 50px;
+    }
+    .btns {
+      display: flex;
+      flex-direction: column;
     }
   }
 }

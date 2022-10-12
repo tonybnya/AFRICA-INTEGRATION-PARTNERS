@@ -1,0 +1,42 @@
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/typo';
+
+span {
+  text-decoration: none;
+  font-weight: bolder;
+  color: $color-primary;
+}
+
+#cabinet {
+  margin-top: 100px;
+  color: $color-white;
+  font-family: 'Inter';
+  .container {
+    width: 80%;
+    margin: 50px auto;
+    .item {
+      margin-top: 100px;
+      line-height: 1.5em;
+      font-size: 20px;
+      text-align: justify;
+      h1 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+    }
+  }
+  .ceo {
+    margin: 30px auto;
+    display: flex;
+    .fred {
+      width: 30%;
+      margin-right: 20px;
+      border: 5px solid $color-white;
+      border-radius: 5px;
+      &:hover {
+        scale: 1.05;
+        border: 3px solid $color-primary;
+      }
+    }
+  }
+}

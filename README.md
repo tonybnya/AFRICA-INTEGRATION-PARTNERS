@@ -2,7 +2,7 @@
 
 Ne pouvant pas pusher de fichier au-delà de 25 Mo sur GitHub, bien vouloir trouver ci-dessous le lien vers le document portant "Création de la Stratégie Marketing et du Site Web de AIP"
 ---
-[Lien]()
+[Lien](https://drive.google.com/file/d/1C3u9t9pcOfszFroBCkvFsDl1GQSLS3rf/view)
 
 ---
 Aussi, rendus à la deadline, bien vouloir noter sur l'image ci-dessous le retard dans le déploiement du site web

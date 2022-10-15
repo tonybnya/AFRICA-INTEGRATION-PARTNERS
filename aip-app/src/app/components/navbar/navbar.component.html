@@ -2,7 +2,7 @@
   <!-- nav header -->
   <div class="nav-header">
     <a class="branding" routerLink="">
-      <img src="../../../assets/img/logo5-nobg.png" class="logo" alt="logo" />
+      <img src="../../../assets/img/logo.png" class="logo" alt="logo" />
     </a>
     <button class="nav-toggle">
       <i class="fas fa-bars"></i>
@@ -18,31 +18,29 @@
           routerLink=""
           routerLinkActive="active"
           [routerLinkActiveOptions]="{ exact: true }"
-          >home</a
+          >HOME</a
         >
       </li>
       <li>
         <a class="link" routerLink="cabinet" routerLinkActive="active"
-          >cabinet</a
+          >CABINET</a
         >
       </li>
       <li>
         <a class="link" routerLink="solutions" routerLinkActive="active"
-          >solutions</a
+          >SOLUTIONS</a
         >
       </li>
       <li>
         <a class="link" routerLink="archives" routerLinkActive="active"
-          >archives</a
+          >ARCHIVES</a
         >
       </li>
-      <li>
-        <app-button
-          class="login"
-          routerLink="login"
-          text="se connecter"
-        ></app-button>
-      </li>
+    </ul>
+    <ul class="account">
+      <li><a routerLink="login" class="login">Se connecter</a></li>
+      <span>|</span>
+      <li><a routerLink="signup" class="signup">Créer un compte</a></li>
     </ul>
   </div>
 </div>

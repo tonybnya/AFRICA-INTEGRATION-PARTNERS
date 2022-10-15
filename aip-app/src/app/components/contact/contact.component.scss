@@ -10,7 +10,7 @@
   margin-top: 100px;
   height: 100vh;
   overflow: hidden;
-  font-family: 'Varela';
+  font-family: 'Montserrat';
   form {
     display: flex;
     flex-direction: column;
@@ -24,6 +24,9 @@
   h1,
   label {
     color: $color-white;
+  }
+  h1 {
+    font-family: 'Righteous';
   }
   input,
   textarea {
@@ -41,7 +44,7 @@
     height: 200px;
     border: none;
   }
-  .btn {
+  .btns {
     text-align: center;
   }
 }

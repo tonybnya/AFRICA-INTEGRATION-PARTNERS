@@ -1,23 +1,27 @@
 <header id="hero">
+  <app-navbar></app-navbar>
   <div class="container hero">
+    <video controls muted autoplay loop class="video-container">
+      <source src="../../../assets/video.mp4" type="video/mp4" />
+    </video>
     <!-- banner -->
     <div class="banner">
-      <p class="title">Le Conseil, Notre Expertise.</p>
+      <h1 class="title">
+        Le<span class="one"> Conseil</span>,<span class="two"> Notre</span
+        ><span class="three"> Expertise</span>.
+      </h1>
       <p class="text">
         Vous avez une idée ? Un projet ? Vous avez déjà vos premiers clients
         ?<br />Faites-vous accompagner par nos experts et garantissez votre
-        réussite !<br /><a routerLink="cabinet">AFRICA INTEGRATION PARTNERS</a>,
-        le partenaire de votre croissance !
+        réussite !<br /><span>AFRICA INTEGRATION PARTNERS</span>, le partenaire
+        de votre croissance !
       </p>
       <div class="btns">
-        <a class="file" href="../../../assets/aip.pdf" target="_blank"
-          >LA PLAQUETTE</a
-        >
-        <app-button text="nous contacter" routerLink="contact"></app-button>
+        <a class="file" href="../../../assets/aip.pdf" target="_blank">
+          Télécharger notre plaquette
+          <img width="15%" src="../../../assets/img/download-pdf.png" alt="" />
+        </a>
       </div>
-    </div>
-    <div class="hero-img">
-      <img class="fred" src="../../../assets/img/fred.jpg" alt="" />
     </div>
   </div>
 </header>
@@ -265,3 +269,5 @@
     </mat-tab-group>
   </div>
 </section>
+
+<app-contact></app-contact>

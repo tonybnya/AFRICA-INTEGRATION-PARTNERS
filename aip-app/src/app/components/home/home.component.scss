@@ -3,30 +3,20 @@
 
 .container {
   width: 80%;
-  margin: 50px auto;
+  margin: 0 auto;
   color: $color-white;
-  font-family: 'Varela';
+  font-family: 'Montserrat';
 }
 
 .hero {
   display: flex;
-  .fred {
-    max-width: 100%;
-    height: auto;
-    margin-top: 120px;
-    border: 5px solid $color-white;
-    border-radius: 5px;
-    &:hover {
-      scale: 1.05;
-      border: 3px solid $color-primary;
-    }
-  }
 }
 
 a {
   text-decoration: none;
   font-weight: bolder;
-  color: $color-primary;
+  color: #C63753;
+  font-family: 'Righteous';
 }
 
 #hero {
@@ -41,20 +31,28 @@ a {
     }
   }
 
-  @keyframes fadeInLeft {
-    0% {
-      opacity: 0;
-      transform: translateX(1000px) scale(0.1);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0) scale(1);
-    }
+  min-height: 100vh;
+  position: relative;
+  font-family: 'Montserrat';
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -1;
   }
-
-  min-height: 80vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.4), rgba(0, 0, 0, 0.9)), url(https://i.postimg.cc/xdwZ5k5z/pexels-christina-morillo-1181422.jpg) center/cover no-repeat;
-  // background: url(https://i.postimg.cc/xdwZ5k5z/pexels-christina-morillo-1181422.jpg) center/cover no-repeat;
+  .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
   .banner {
     animation: fadeInRight 1500ms ease-in-out;
     min-height: 100vh;
@@ -62,46 +60,57 @@ a {
     flex-direction: column;
     text-align: justify;
     padding-top: 120px;
+    font-family: 'Montserrat';
     .file {
-      width: 140px;
+      width: 300px;
       text-align: center;
-      text-transform: uppercase;
-      font-family: 'VarelaRound';
-      font-weight: bolder;
-      background: transparent;
+      font-family: 'Righteous';
+      background: #21556B;
       color: $color-white;
       padding: 0.5rem 0.5rem;
-      font-size: .8rem;
+      font-size: 1rem;
       border-radius: 5px;
-      border: 2px solid $color-primary;
       cursor: pointer;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
       &:hover {
-        color: $color-primary;
+        color: #21556B;
         background: $color-white;
-        border: 2px solid $color-primary;
       }
     }
     app-button {
       margin-top: 15px;
     }
     h1 {
-      text-transform: uppercase;
       color: $color-white;
-      font-family: 'VarelaRound';
       font-size: 3rem;
       font-weight: bolder;
+      .one {
+        color: #408088;
+      }
+      .one {
+        color: #C63753;
+      }
+      .three {
+        color: #21556B;
+      }
     }
     p {
       margin: 20px auto;
       width: 50rem;
-      font-family: 'Varela';
       line-height: 30px;
       font-size: 20px;
       color: $color-white;
     }
+    .text {
+      text-align: justify;
+      font-family: 'Righteous';
+      span {
+        color: #C63753;
+        font-size: bolder;
+      }
+    }
     .title {
-      font-family: 'VarelaRound';
+      font-family: 'Righteous';
       font-size: 50px;
     }
     .btns {
@@ -109,12 +118,12 @@ a {
       flex-direction: column;
     }
   }
-  .hero-img {
-    animation: fadeInLeft 1500ms ease-in-out;
-  }
 }
 
 #description {
+  h1 {
+    font-family: 'Righteous';
+  }
   p, li {
     font-size: 16px;
     line-height: 1.5em;
@@ -147,7 +156,7 @@ a {
   font-family: 'InterTight';
   margin-bottom: 200px;
   h1 {
-    font-family: 'Varela';
+    font-family: 'Righteous';
     font-weight: bolder;
     text-transform: uppercase;
     margin-bottom: 50px;
@@ -181,7 +190,8 @@ a {
         h3 {
           border-bottom: 3px solid $color-white;
           margin-bottom: 10px;
-          font-family: 'VarelaRound';
+          font-family: 'Righteous';
+          color: #C63753;
           font-size: 14px;
           text-transform: uppercase;
         }
@@ -196,8 +206,13 @@ a {
 
 #choice {
   .container {
+    font-family: 'Righteous';
     h1 {
       text-align: center;
+      font-family: 'Righteous';
+    }
+    h2 {
+      font-family: 'Righteous';
     }
     .text {
       padding: 1rem;
@@ -205,20 +220,22 @@ a {
         text-align: justify;
         font-size: 20px;
         line-height: 1.5em;
+        font-family: 'Montserrat';
       }
       li {
         font-size: 20px;
         line-height: 1.5em;
+        font-family: 'Montserrat';
       }
     }
     ::ng-deep .mat-tab-list .mat-tab-labels .mat-tab-label-active {
-      color:$color-primary;
+      color: #C63753;
       background-color: $color-white;
     }
       
     ::ng-deep .mat-tab-list .mat-tab-labels {
       color: $color-white;
-      background-color: $color-primary;
+      background-color: #C63753;
     }
   }
 }

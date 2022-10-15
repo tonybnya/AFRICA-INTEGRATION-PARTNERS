@@ -3,19 +3,18 @@
 
 button {
   text-transform: uppercase;
-  font-family: 'VarelaRound';
+  font-family: 'Righteous';
   font-weight: bolder;
-  background: transparent;
+  background: #408088;
   color: $color-white;
   padding: 0.5rem 0.5rem;
   font-size: .8rem;
   border-radius: 5px;
-  border: 2px solid $color-primary;
+  border: none;
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   &:hover {
-    color: $color-primary;
-    background: $color-white;
-    border: 2px solid $color-primary;
+    background: $color-primary;
+    border: none;
   }
 }

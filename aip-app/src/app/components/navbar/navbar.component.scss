@@ -3,13 +3,20 @@
 
 .nav {
   padding-top: 1rem;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  span {
+    color: #C63753;
+    font-weight: bold;
+  }
   .logo {
     max-width: 15%;
+    &:hover {
+      scale: 1.2;
+    }
   }
   .nav-header {
     display: flex;
@@ -24,7 +31,7 @@
       cursor: pointer;
       &:hover {
         scale: 1.1;
-        color: $color-primary;
+        color: #C63753;
       }
     }
   }
@@ -36,31 +43,55 @@
       display: flex;
       align-items: center;
       li {
+        color: #21556B;
         &:hover {
           scale: 1.1;
         }
         a {
           text-decoration: none;
-          text-transform: uppercase;
-          font-family: 'VarelaRound';
-          font-size: 16px;
+          font-family: 'Righteous';
+          font-size: 20px;
           color: $color-white;
           margin: 0 .7rem;
         }
+        .active {
+          font-weight: bolder;
+          color: #C63753;
+          scale: 1.2;
+        }
+      }
+    }
+    .account {
+      display: flex;
+      align-items: center;
+      li {
+        // &:hover {
+        //   scale: 1.1;
+        // }
+        a {
+          text-decoration: none;
+          font-family: 'Montserrat';
+          font-size: 15px;
+          color: $color-white;
+          margin: 0 .7rem;
+          &:hover {
+            color: #21556B;
+          }
+        }
+      }
+      .login,
+      .signup {
+        &:hover {
+          text-decoration: underline;
+        }
       }
       .login {
-        margin-left: 5rem;
+        margin-left: 3rem;
       }
     }
   }
 }
 
-.active {
-  font-weight: bolder;
-  text-decoration: underline;
-  color: $color-primary !important;
-  scale: 1.1;
-}
 
 .show-links {
   height: 200px;

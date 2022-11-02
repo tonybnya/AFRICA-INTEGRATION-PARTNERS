@@ -6,8 +6,9 @@ footer {
   margin-top: 200px;
   color: $color-white;
   font-family: 'Varela';
+  background: #102a42;
   .content {
-    width: 80%;
+    width: 90%;
     margin: 30px auto;
     display: flex;
     justify-content: space-between;
@@ -27,6 +28,11 @@ footer {
       }
       .logo {
         width: 50%;
+        &:hover {
+          filter: drop-shadow(0 0 20px #C63753);
+          cursor: pointer;
+          scale: 1.2;
+        }
       }
     }
     .sitemap {
@@ -42,6 +48,7 @@ footer {
             color: $color-white;
             font-family: 'Righteous';
             text-decoration: none;
+            font-size: 20px;
             &:hover {
               text-decoration: underline;
               color: #C63753;
@@ -58,10 +65,10 @@ footer {
       }
       .address {
         .place {
-          margin-bottom: 10px;
+          margin-bottom: 15px;
           text-align: justify;
           span {
-            font-size: 15px;
+            font-size: 12px;
           }
           .town {
             color: #C63753;

@@ -16,6 +16,7 @@
     max-width: 15%;
     &:hover {
       scale: 1.2;
+      filter: drop-shadow(0 0 10px #C63753);
     }
   }
   .nav-header {
@@ -65,9 +66,6 @@
       display: flex;
       align-items: center;
       li {
-        // &:hover {
-        //   scale: 1.1;
-        // }
         a {
           text-decoration: none;
           font-family: 'Montserrat';

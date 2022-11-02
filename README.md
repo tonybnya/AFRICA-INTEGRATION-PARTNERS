@@ -1,10 +1,13 @@
-# AFRICA-INTEGRATION-PARTNERS
+# AFRICA INTEGRATION PARTNERS
 
-Ne pouvant pas pusher de fichier au-delà de 25 Mo sur GitHub, bien vouloir trouver ci-dessous le lien vers le document portant "Création de la Stratégie Marketing et du Site Web de AIP"
+AIP est un Cabinet d'Expertise spécialisé dans l'accompagnement des PME. Dans le cadre de l'activité intitulée "Stage Inversé" du Programme Talents4Startup, un site vitrine a été réalisé pour ledit cabinet.
+
+
+
+Le framework Angular a été privilégié pour cette réalisation, et une stratégie marketing a été définie pour ledit site.
+
+
+
+Les documents portant sur la planification du projet ainsi que la stratégie marketing ci-dessus mentionnée, sont également présents à la racine du présent dépôt.
+
 ---
-[Lien](https://drive.google.com/file/d/1C3u9t9pcOfszFroBCkvFsDl1GQSLS3rf/view)
-
----
-Aussi, bien vouloir noter les difficultés de l'équipe à déployer le site, comme l'indique l'image ci-dessous.
-
-![Screenshot 2022-10-13 at 04 43 10](https://user-images.githubusercontent.com/9444085/195496947-761b1a1e-ffcd-45dc-96d7-91f603e2e091.png)

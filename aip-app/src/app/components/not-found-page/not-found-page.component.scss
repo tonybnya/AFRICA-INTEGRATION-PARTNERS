@@ -5,15 +5,18 @@
   width: 80%;
   margin: 100px auto;
   .content {
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    .error {
+      margin-right: 50px;
+    }
     .text {
       h1 {
-        text-transform: capitalize;
+        text-transform: uppercase;
         padding-bottom: 20px;
         color: $color-white;
-        font-family: 'Varela';
+        font-family: 'Righteous';
       }
     }
   }

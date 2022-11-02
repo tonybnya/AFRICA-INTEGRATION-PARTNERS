@@ -26,7 +26,8 @@
     color: $color-white;
     &:hover {
       cursor: pointer;
-      color: #C63753;
+      // color: #C63753;
+      filter: drop-shadow(0 0 10px #C63753);
       scale: 1.1;
     }
   }

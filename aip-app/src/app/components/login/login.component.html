@@ -1,15 +1,27 @@
 <div class="container">
   <h1>Connectez-vous !</h1>
-  <form>
+  <form class="form" [formGroup]="loginForm" (ngSubmit)="login()">
     <div class="form-control">
-      <input type="email" placeholder="Email" required />
+      <input
+        formControlName="email"
+        id="email"
+        type="email"
+        placeholder="Email"
+        required
+      />
     </div>
 
     <div class="form-control">
-      <input type="password" placeholder="Mot de passe" required />
+      <input
+        formControlName="password"
+        id="password"
+        type="password"
+        placeholder="Mot de passe"
+        required
+      />
     </div>
 
-    <app-button text="Se connecter" class="login"></app-button>
+    <app-button text="Se connecter" class="login" type="submit"></app-button>
 
     <p class="text">
       Vous n'avez pas encore de compte ?

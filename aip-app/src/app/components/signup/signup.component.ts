@@ -11,10 +11,10 @@ import { Router } from '@angular/router';
 export class SignupComponent implements OnInit {
   public signupForm!: FormGroup;
 
-  constructor(private formbuilder: FormBuilder, private http: HttpClient, private router: Router) { }
+  constructor(private formBuilder: FormBuilder, private http: HttpClient, private router: Router) { }
 
   ngOnInit(): void {
-    this.signupForm = this.formbuilder.group({
+    this.signupForm = this.formBuilder.group({
       name: [''],
       firstname: [''],
       startup: [''],

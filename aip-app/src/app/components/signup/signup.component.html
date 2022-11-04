@@ -1,39 +1,81 @@
 <div class="container">
   <h1>Inscrivez-vous !</h1>
-  <form>
+  <form class="form" [formGroup]="signupForm" (ngSubmit)="signUp()">
     <div class="form-control">
-      <input type="text" placeholder="Noms" required />
+      <input
+        formControlName="name"
+        id="name"
+        type="text"
+        placeholder="Noms"
+        required
+      />
     </div>
 
     <div class="form-control">
-      <input type="text" placeholder="Prénoms" required />
+      <input
+        formControlName="firstname"
+        id="firstname"
+        type="text"
+        placeholder="Prénoms"
+        required
+      />
     </div>
 
     <div class="form-control">
-      <input type="text" placeholder="Entreprise" required />
+      <input
+        formControlName="startup"
+        id="startup"
+        type="text"
+        placeholder="Entreprise"
+        required
+      />
     </div>
 
     <div class="form-control">
-      <input type="text" placeholder="Poste" required />
+      <input
+        formControlName="position"
+        id="position"
+        type="text"
+        placeholder="Poste"
+        required
+      />
     </div>
 
     <div class="form-control">
-      <input type="text" placeholder="Pays" required />
+      <input
+        formControlName="country"
+        id="country"
+        type="text"
+        placeholder="Pays"
+        required
+      />
     </div>
 
     <div class="form-control">
-      <input type="email" placeholder="Email" required />
+      <input
+        formControlName="email"
+        id="email"
+        type="email"
+        placeholder="Email"
+        required
+      />
     </div>
 
     <div class="form-control">
-      <input type="password" placeholder="Mot de passe" required />
+      <input
+        formControlName="password"
+        id="password"
+        type="password"
+        placeholder="Mot de passe"
+        required
+      />
     </div>
 
-    <div class="form-control">
+    <!-- <div class="form-control">
       <input type="password" placeholder="Confirmer mot de passe" required />
-    </div>
+    </div> -->
 
-    <app-button text="S'inscrire" class="login"></app-button>
+    <app-button text="S'inscrire" class="login" type="submit"></app-button>
 
     <p class="text">
       Vous avez déjà un compte ?

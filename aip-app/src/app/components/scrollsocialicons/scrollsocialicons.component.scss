@@ -23,10 +23,9 @@
   .social {
     margin-top: 20px;
     font-size: 30px;
-    color: $color-white;
+    color: #21556b;
     &:hover {
       cursor: pointer;
-      // color: #C63753;
       filter: drop-shadow(0 0 10px #C63753);
       scale: 1.1;
     }
